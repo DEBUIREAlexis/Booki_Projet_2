@@ -59,7 +59,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Header and Navbar ***********/
+/****** Header and Navbar ******/
 header {
     display: flex;
     justify-content: space-between;
@@ -89,6 +89,28 @@ header li {
 .navbar-active-page {
     color: #0065FC;
     border-top: 3px solid #0065FC;
+}
+
+/****** Rechercher, Filtres et promesse ******/
+.filters {
+    display: flex;
+    margin: 16px 0px 16px 0px;
+}
+
+.filters-individual {
+    display: flex;
+    justify-content: center;
+    margin-left: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+}
+
+.filters i {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
 }
 
 /****** Hebergements And Populaires ***********/
