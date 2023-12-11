@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .main-container {
@@ -56,6 +57,38 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Header and Navbar ***********/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 19px;
+    width: 61px;
+    align-self: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+header ul {
+    display: flex;   
+    list-style-type: none;
+    margin:0px;
+    height: 100%;
+}
+
+header li {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-active-page {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
 }
 
 /****** Hebergements And Populaires ***********/
