@@ -86,12 +86,73 @@ header li {
     align-items: center;
 }
 
-.navbar-active-page {
+
+header li:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
 
 /****** Rechercher, Filtres et promesse ******/
+.recherche-form-section h1{
+    margin-bottom: 4px;
+}
+
+.subtitle-h1 {
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.form-recherche {
+
+    display: flex;
+}
+
+.form-recherche i {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: #F2F2F2;
+    padding: 16px;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.recherche-textbox {
+    box-sizing: border-box;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rechercher-submit {
+    padding: 16px;
+    border: none;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+}
+
+.rechercher-submit-phone {
+    display: none;
+}
+
+.filters-w-title {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.title-filters {
+    margin-right: 16px;
+}
+
 .filters {
     display: flex;
     margin: 16px 0px 16px 0px;
@@ -100,17 +161,37 @@ header li {
 .filters-individual {
     display: flex;
     justify-content: center;
-    margin-left: 16px;
+    margin-right: 16px;
     padding-left: 8px;
     padding-right: 8px;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 50px;
+
+}
+
+.filters-individual:hover {
+    background-color:#DEEBFF ;
 }
 
 .filters i {
     display: flex;
     align-items: center;
     margin-right: 8px;
+}
+
+.info-suppl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-suppl i{
+    margin-right: 8px;
+    background-color: #0065FC;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid #F2F2F2;
 }
 
 /****** Hebergements And Populaires ***********/
