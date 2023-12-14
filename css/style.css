@@ -83,17 +83,20 @@ header ul {
   list-style-type: none;
   margin: 0px;
   height: 100%;
+  justify-content: space-around;
 }
 
 header li {
   margin-left: 24px;
   display: flex;
   align-items: center;
+  width: 112px;
+  justify-content: center;
 }
 
 header li:hover {
   color: var(--main-color);
-  border-top: 3px solid --main-color;
+  border-top: 3px solid var(--main-color);
 }
 
 /****** Rechercher, Filtres et promesse ******/
@@ -171,8 +174,8 @@ header li:hover {
   display: flex;
   justify-content: center;
   margin-right: 16px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   border: 3px solid #e6e6e6;
   border-radius: 50px;
   align-items: center;
@@ -219,6 +222,7 @@ header li:hover {
 
 .hebergements-show-more {
   margin-bottom: 0px;
+  margin-top: 33px;
 }
 
 /****** Hebergements ***********/
@@ -251,7 +255,7 @@ header li:hover {
   box-sizing: border-box;
 }
 
-.-hebergements-cardcontent {
+.hebergements-card-content {
   padding-left: 15px;
   height: 45%;
   display: flex;
@@ -341,7 +345,7 @@ header li:hover {
 
 .activite {
   margin-top: 33px;
-  max-width: 24%;
+  max-width: 23%;
   display: flex;
   flex-direction: column;
   border-radius: 16px;
@@ -383,11 +387,18 @@ footer li {
   font-weight: 500;
 }
 
+footer strong {
+  font-size: 18px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .main-container {
+    padding: 0 30px;
+  }
   .hebergements-populaires-wrap {
     flex-direction: column;
   }
@@ -463,7 +474,7 @@ footer li {
 
   header li:hover {
     color: var(--main-color);
-    border-bottom: 3px solid --main-color;
+    border-bottom: 3px solid var(--main-color);
     border-top: none;
   }
 
@@ -522,6 +533,8 @@ footer li {
     margin-bottom: 20px;
     margin-right: 0px;
     font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .recherche-info {
@@ -553,6 +566,16 @@ footer li {
   .hebergements-cards .hebergements-card {
     margin-top: 16px;
   }
+
+  .hebergements-card-content {
+    height: 100%;
+    justify-content: space-evenly;
+  }
+
+  .hebergements-show-more {
+    margin-top: 16px;
+  }
+
   .populaires-section {
     order: 0;
     margin-top: 20px;
