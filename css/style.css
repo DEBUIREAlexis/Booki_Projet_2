@@ -137,7 +137,6 @@ header li:hover {
 
 .recherche-textbox:focus {
   outline: none;
-  background-color: var(--filter-bg-color);
 }
 
 .rechercher-submit {
